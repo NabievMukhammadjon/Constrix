@@ -1,0 +1,158 @@
+{
+  "statistics": {
+    "sessions": [
+      {
+        "date": "12.04.2026",
+        "start": 1775993018897,
+        "end": 1775993558268,
+        "type": "build"
+      },
+      {
+        "date": "12.04.2026",
+        "start": 1775993957575,
+        "end": 1776011815445
+      },
+      {
+        "date": "14.04.2026",
+        "start": 1776189094019,
+        "end": 1776190338385
+      },
+      {
+        "date": "16.04.2026",
+        "start": 1776352648702,
+        "end": 1776355726367
+      },
+      {
+        "date": "17.04.2026",
+        "start": 1776445783378,
+        "end": 1776451347229
+      },
+      {
+        "date": "18.04.2026",
+        "start": 1776497170883,
+        "end": 1776511070696
+      },
+      {
+        "date": "18.04.2026",
+        "start": 1776512317220,
+        "end": 1776513225754
+      },
+      {
+        "date": "18.04.2026",
+        "start": 1776513229940,
+        "end": 1776522553937
+      },
+      {
+        "date": "19.04.2026",
+        "start": 1776578001407,
+        "end": 1776590049948
+      },
+      {
+        "date": "19.04.2026",
+        "start": 1776590055006,
+        "end": 1776590199387
+      },
+      {
+        "date": "19.04.2026",
+        "start": 1776590202783,
+        "end": 1776594644364
+      },
+      {
+        "date": "20.04.2026",
+        "start": 1776701604380,
+        "end": 1776701604380
+      },
+      {
+        "date": "20.04.2026",
+        "start": 1776705874807,
+        "end": 1776711701332
+      },
+      {
+        "date": "21.04.2026",
+        "start": 1776788893399,
+        "end": 1776798285148
+      },
+      {
+        "date": "22.04.2026",
+        "start": 1776874633105,
+        "end": 1776883788286
+      },
+      {
+        "date": "23.04.2026",
+        "start": 1776960344664,
+        "end": 1776960344664
+      },
+      {
+        "date": "24.04.2026",
+        "start": 1777046372898,
+        "end": 1777046372898
+      },
+      {
+        "date": "25.04.2026",
+        "start": 1777115189919,
+        "end": 1777115189919
+      },
+      {
+        "date": "26.04.2026",
+        "start": 1777183495998,
+        "end": 1777183495998
+      },
+      {
+        "date": "26.04.2026",
+        "start": 1777205446604,
+        "end": 1777208845860
+      },
+      {
+        "date": "03.05.2026",
+        "start": 1777795864471,
+        "end": 1777831010713
+      },
+      {
+        "date": "04.05.2026",
+        "start": 1777912553187,
+        "end": 1777922626721
+      }
+    ],
+    "files": [
+      "header.scss",
+      "header.html",
+      "inner.html",
+      "main.html",
+      "→.svg",
+      "Group 726.png",
+      "Platform=YouTube, Color=Original.png",
+      "Platform=LinkedIn, Color=Original (1).png",
+      "phone.svg",
+      "index.html",
+      "spritemap.scss",
+      "tool.svg",
+      "start.svg",
+      "quotes.svg",
+      "mail.svg",
+      "logomark-black.svg",
+      "logo.svg",
+      "home.svg",
+      "consultation.svg",
+      "check.svg",
+      "arrow.svg",
+      "arrow-bottom.svg",
+      "settings.scss",
+      "Luxury architecture.png",
+      "index.scss",
+      "iconfont.svg",
+      "iconfont.ttf",
+      "iconfont.woff2",
+      "iconfont.html",
+      "footer.html",
+      "footer.scss",
+      "The Morrison Estate.jpg",
+      "Grand Fireplace Suite.jpg",
+      "Mediterranean Terrace.jpg",
+      "Craftsmanship process.png",
+      "Premium architecture.jpg",
+      "popup.html",
+      "popup.scss",
+      "style.scss"
+    ]
+  }
+}

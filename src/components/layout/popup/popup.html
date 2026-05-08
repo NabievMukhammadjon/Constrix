@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="@components/layout/popup/popup.scss">
+<div data-fls-popup="popup" aria-hidden="true" class="popup">
+	<div data-fls-popup-wrapper class="popup__wrapper">
+		<div data-fls-popup-body class="popup__body">
+			<button data-fls-popup-close type="button" class="popup__close"><svg width="23" height="23" viewBox="0 0 23 23"
+					fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+					<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+				</svg></button>
+			<div data-fls-popup-content class="popup__text">
+				<!-- Контент -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<div data-fls-popup="consultaion" aria-hidden="true" class="popup popup-consultaion">
+	<div data-fls-popup-wrapper class="popup-consultaion__wrapper">
+		<div data-fls-popup-body class="popup-consultaion__body">
+			<h3 class="popup-consultaion__title">Заказать консультацию</h3>
+			<button data-fls-popup-close type="button" class="popup-consultaion__close"><svg width="23" height="23"
+					viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+					<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+				</svg></button>
+			<div data-fls-popup-content class="popup-consultaion__body">
+				<!-- <form data-fls-form method="POST" action="files/sendmail/sendmail.php" -->
+				<form data-fls-form="dev" method="POST" action="files/sendmail/sendmail.php"
+					class="popup-consultaion__form form-popup">
+					<div class="form-popup__fields">
+						<div class="form-popup__field">
+							<!-- <input id="nameInput" autocomplete="off" type="text" name="form[name]" data-fls-form-errtext="Error"
+								data-placeholder="" class="form-popup__input input" data-required="name"> -->
+							<input id="nameInput" autocomplete="off" type="text" name="form[name]" data-fls-form-validatenow
+								data-fls-form-errtext="Error" placeholder="" class="form-popup__input input" required>
+							<label for="nameInput" class="form-popup__label">Имя</label>
+						</div>
+						<div class="form-popup__field">
+							<!-- <input id="emailInput" autocomplete="off" type="text" name="form[email]" data-fls-form-errtext="Error" data-placeholder=""
+								class="form-popup__input input" data-required="email"> -->
+							<input id="emailInput" autocomplete="off" type="email" name="form[email]" data-fls-form-validatenow
+								data-fls-form-errtext="Error" placeholder="" class="form-popup__input input" required>
+							<label for="emailInput" class="form-popup__label">E-mail</label>
+						</div>
+						<div class="form-popup__field form-popup__field--full">
+							<textarea name="form[textarea]" id="form[textarea]" data-fls-form-errtext="Error" placeholder=""
+								class="form-popup__input form-popup__input--textarea"></textarea>
+							<label for="form[textarea]" class="form-popup__label">Сообщение</label>
+						</div>
+					</div>
+					<div class="form-popup__checkbox">
+						<input id="form[checkbox]" type="checkbox" name="form[checkbox]" data-fls-form-validatenow required
+							data-fls-form-errtext="Error" class="form-popup__checkbox-input">
+						<label for="form[checkbox]" class="form-popup__checkbox-label">Я согласен на обработку персональных
+							данных</label>
+					</div>
+					<button type="submit" class="form-popup__button">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

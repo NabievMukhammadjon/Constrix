@@ -1,0 +1,379 @@
+.index {
+}
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+.main-hero {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// background: url('@img/hero-bg.png') no-repeat center center;
+	background-image: url('@img/hero-bg.png');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.1);
+		}
+
+		&__container {
+			@include adaptiveValue("padding-top", 30, 16,0,1024,768);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+		}
+
+		&__body {
+			position: relative;
+			max-width: 1024px;
+			display: flex;
+			flex: 1 1 auto;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__title {
+			font-size: 3.5rem;
+			line-height: 1.2;
+			font-weight: 700;
+			color: #fff;
+			margin-bottom: 20px;
+			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+			animation: fadeInUp 1s ease-out;
+			animation-fill-mode: both;
+			animation-delay: 0.3s;
+			// opacity: 0;
+		}
+
+		&__text {
+			font-size: 1.25rem;
+			line-height: 1.6;
+			color: #fff;
+			text-align: center;
+			margin-bottom: 30px;
+			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+			animation: fadeInUp 1s ease-out;
+			animation-fill-mode: both;
+			animation-delay: 0.5s;
+			// opacity: 0;
+		}
+
+		&__link {
+			fzont-size: 1rem;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border-radius: 4px;
+			text-decoration: none;
+			animation: fadeInUp 1s ease-out;
+			animation-fill-mode: both;
+			animation-delay: 0.7s;
+			&:hover {
+				background-color: #0056b3;
+			}
+			&:active {
+				background-color: #004085;
+			}
+			&:focus {
+				outline: none;
+				box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+			}
+		}
+}
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+.projects {
+	@include adaptiveValue("padding-top", 192, 40);
+	@include adaptiveValue("padding-bottom", 192, 40);
+	background-color: #1a1a1a;
+		&__container {
+		}
+
+		&__top {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			@include adaptiveValue("margin-bottom", 60, 24);
+		}
+
+		&__title {
+			font-size: 32px;
+			font-weight: 600;
+			color: $whiteColor;
+		}
+
+		&__link {
+			padding: 23px 40px;
+			border: 1px solid $whiteColor;
+			border-radius: 2px;
+			color: $whiteColor;
+			font-weight: 600;
+			transition: all 0.3s ease;
+				&:hover {
+					background-color: $whiteColor;
+					color: $mainColor;
+				}
+		}
+
+		&__body {
+		}
+}
+.body-projects {
+
+		&__title {
+		}
+
+		&__block {
+			display: flex;
+			margin-bottom: 24px;
+		}
+
+		&__info {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			background-color: #292929;
+			@include adaptiveValue("padding", 66, 32);
+			
+		}
+
+		&__category {
+			color: rgba(255, 255, 255, 0.6);
+			margin-bottom: 12px;
+		}
+
+		&__name {
+			color: $whiteColor;
+			margin-bottom: 23px;
+			font-size: 32px;
+		}
+
+		&__descr {
+			color: rgba(255, 255, 255, 0.6);
+		}
+
+		&__location {
+			position: relative;
+			margin-top: auto;
+			color: rgba(255, 255, 255, 0.6);
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: -27px;
+				width: 100%;
+				height: 1px;
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+		}
+
+		&__gallery {
+		}
+}
+.gallery-main {
+
+		&__container {
+		}
+
+		&__body {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 24px;
+		}
+
+		&__item {
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&__item-large {
+			grid-column: span 2;
+			
+		}
+}
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+.process {
+	background-color: #1a1a1a;
+	&__container {
+		@include adaptiveValue("padding-top", 192, 40);
+		@include adaptiveValue("padding-bottom", 192, 40);
+		position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-image: url('@img/process-bg.png');
+				background-size: contain;
+				background-position: right;
+				background-repeat: no-repeat;
+				z-index: 1;
+			}
+		}
+
+		&__title {
+			position: relative;
+			color: $whiteColor;
+			font-size: 32px;
+			font-weight: 600;
+			z-index: 100;
+			@include adaptiveValue("margin-bottom", 74, 30,0,1024,768);
+				&::after {
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: -24px;
+					width: 50px;
+					height: 2px;
+					background-color: $mainColor;
+				}
+		}
+
+		&__body {
+			position: relative;
+			z-index: 100;
+		}
+}
+.body-process {
+	display: flex;
+	@include adaptiveValue("gap", 48, 24);
+	&__item {
+		position: relative;
+		padding-left: 34px;
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 1px;
+				height: 100%;
+				background-color: $bisonHide;
+			}
+		}
+
+		&__num {
+			color: $bisonHide;
+			margin-bottom: 20px;
+			font-size: 32px;
+			font-weight: 600;
+		}
+
+		&__subtitle {
+			color: $whiteColor;
+			font-size: 24px;
+			font-weight: 600;
+			margin-bottom: 16px;
+		}
+		
+		&__descr {
+			line-height: 176%;
+			color: $whiteColor;
+		}
+}
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+.quote {
+	@include adaptiveValue("padding-top", 318, 40);
+	@include adaptiveValue("padding-bottom", 194, 40);
+	background-color: $pearlBush;
+		&__container {
+			& svg {
+				width: 48px;
+				height: 48px;
+				margin-bottom: 24px;
+			}
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+		}
+
+		&__text {
+			font-size: 24px;
+			line-height: 1.6;
+			color: $mainColor;
+			text-align: center;
+			max-width: 830px;
+			@include adaptiveValue("margin-bottom", 54, 24);
+		}
+
+		&__author {
+			font-size: 16px;
+			font-weight: 600;
+			color: $mainColor;
+			margin-bottom: 12px;
+		}
+
+		&__org {
+			color: #7a7a7a;
+			font-size: 14px;
+		}
+}
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+.consultation {
+	position: relative;
+	background-image: url('@img/consultation-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	&::before{
+		content:'';
+		position: absolute;
+		inset: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: 1;
+		
+	}
+		&__container {
+			position: relative;
+			z-index: 2;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			@include adaptiveValue("padding-top", 300, 40);
+			@include adaptiveValue("padding-bottom", 300, 40);
+		}
+
+		&__title {
+			font-size: 32px;
+			font-weight: 600;
+			color: $whiteColor;
+			@include adaptiveValue("margin-bottom", 28, 16);
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 1.6;
+			color: $whiteColor;
+			@include adaptiveValue("margin-bottom", 54, 32);
+			text-align: center;
+		}
+
+		&__link {
+			padding: 23px 40px;
+			border: 1px solid $bisonHide;
+			border-radius: 2px;
+			color: $mainColor;
+			font-weight: 600;
+			transition: all 0.3s ease;
+			background-color: $bisonHide;
+				&:hover {
+					background-color: transparent;
+					color: $whiteColor;
+				}
+		}
+}

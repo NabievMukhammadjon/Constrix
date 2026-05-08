@@ -1,0 +1,50 @@
+@font-face { 
+	font-family: "iconfont"; 
+	font-display: swap;
+	src: url("D://nabiyev/Constrix/src/assets/svgicons/preview/iconfont.woff2?e46e6ef262787aa0702b0ac3a00d04ca") format("woff2"); 
+} 
+[class*="--icon-"]::before{
+	font-family: iconfont; 
+}
+	[class*="--icon-tool"]::before { 
+		content: "\f101"; 
+	} 
+	[class*="--icon-start"]::before { 
+		content: "\f102"; 
+	} 
+	[class*="--icon-quotes"]::before { 
+		content: "\f103"; 
+	} 
+	[class*="--icon-phone"]::before { 
+		content: "\f104"; 
+	} 
+	[class*="--icon-mail"]::before { 
+		content: "\f105"; 
+	} 
+	[class*="--icon-logomark-black"]::before { 
+		content: "\f106"; 
+	} 
+	[class*="--icon-logo"]::before { 
+		content: "\f107"; 
+	} 
+	[class*="--icon-logo-white"]::before { 
+		content: "\f108"; 
+	} 
+	[class*="--icon-logo-white-2"]::before { 
+		content: "\f109"; 
+	} 
+	[class*="--icon-home"]::before { 
+		content: "\f10a"; 
+	} 
+	[class*="--icon-consultation"]::before { 
+		content: "\f10b"; 
+	} 
+	[class*="--icon-check"]::before { 
+		content: "\f10c"; 
+	} 
+	[class*="--icon-arrow"]::before { 
+		content: "\f10d"; 
+	} 
+	[class*="--icon-arrow-bottom"]::before { 
+		content: "\f10e"; 
+	} 
