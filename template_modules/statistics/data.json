@@ -111,6 +111,16 @@
         "date": "04.05.2026",
         "start": 1777912553187,
         "end": 1777922626721
+      },
+      {
+        "date": "09.05.2026",
+        "start": 1778319335213,
+        "end": 1778319335213
+      },
+      {
+        "date": "10.05.2026",
+        "start": 1778413954262,
+        "end": 1778429718997
       }
     ],
     "files": [
@@ -152,7 +162,10 @@
       "Premium architecture.jpg",
       "popup.html",
       "popup.scss",
-      "style.scss"
+      "style.scss",
+      "menu.html",
+      "menu.scss",
+      "menu.json"
     ]
   }
 }

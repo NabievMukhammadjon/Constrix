@@ -2,19 +2,28 @@
 	background-color: #0b0b0c;
 
 		&__container {
+			@media (max-width:toEm($tablet)){
+				display: flex;
+				align-items: center;
+				justify-content: space-between; 
+			}
 		}
 
 		&__body {
-			display: flex;
-			align-items: center;
-			gap: 40px;
-			justify-content: space-between;
+			@media (min-width: toEm($tablet)) {
+				display: flex;
+				align-items: center;
+				gap: 40px;
+				justify-content: space-between;
+			}	
+			
 			@include adaptiveValue("padding-top", 24, 16,0,1024,768);
 			@include adaptiveValue("padding-bottom", 24, 16,0,1024,768);
 		}
 
 		&__logo {
-			
+			position: relative;
+			z-index: 5;
 		}
 
 		&__logo-link {
@@ -27,6 +36,15 @@
 		}
 
 		&__nav {
+			@media (max-width: toEm($tablet)) {
+				display: none;
+			}
+		}
+
+		&__menu {
+			@media (min-width: toEm($tablet)) {
+				display: none;
+			}
 		}
 }
 .nav-header {
@@ -67,4 +85,3 @@
 			}
 		}
 }
-

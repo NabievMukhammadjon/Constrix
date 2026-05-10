@@ -5,8 +5,7 @@
 			<each loop='item in [
 					{"href": "https://google.com","ancor": "Home"},
 					{"href": "#","ancor": "About"},
-					{"href": "#","ancor": "Blog"},
-					{"href": "#","ancor": "Contacts"}
+					{"href": "#","ancor": "Blog"}
 				]'>
 				<if condition="'[[active]]' === '[[item.ancor]]'">
 					<li class="menu__item">
@@ -20,12 +19,32 @@
 				</else>
 			</each>
 		</ul>
+		<div class="menu__contacts">
+			<div class="menu__contacts-info">
+				<p class="menu__contacts-text --icon-home">123 Main Street</p>
+				<p class="menu__contacts-text --icon-phone">+998901254090</p>
+				<p class="menu__contacts-text --icon-mail">constrix@gmail.com</p>
+			</div>
+			<div class="menu__social">
+				<a href="#" class="menu__social-link">
+					<img src="@img/social-icons/instagram.svg" alt="Instagram">
+				</a>
+				<a href="#" class="menu__social-link">
+					<img src="@img/social-icons/telegram.svg" alt="Telegram">
+				</a>
+				<a href="#" class="menu__social-link">
+					<img src="@img/social-icons/facebook.svg" alt="Facebook">
+				</a>
+				<a href="#" class="menu__social-link">
+					<img src="@img/social-icons/youtube.svg" alt="YouTube">
+				</a>
+			</div>
+		</div>
 	</nav>
 </div>
 
-<!-- 
+
 <fetch url="@components/layout/menu/menu.json">
 	<each loop='item in response'>
 	</each>
 </fetch>
--->

@@ -1,17 +1,20 @@
 .menu {
+	z-index: 4;
 	// .menu__icon
 	&__icon {
+		z-index: 5;
 	}
 	// .menu__body
 	&__body {
-		@media (max-width: toEm($mobile)) {
+		background-color: $blackBg;
+		@media (max-width: toEm($tablet)) {
 			position: fixed;
 			width: 100%;
 			height: 100svh;
 			left: -100%;
 			top: 0;
 			overflow: auto;
-			padding: 50px 15px 30px 15px;
+			padding: 180px 15px 30px 15px;
 			transition: left 0.3s;
 			&::before {
 				content: "";
@@ -33,7 +36,14 @@
 	}
 	// .menu__list
 	&__list {
-		@media (max-width: toEm($mobile)) {
+		max-width: 930px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 20px;
+		margin-bottom: 80px;
+		@media (max-width: toEm($tablet)) {
 		}
 	}
 	// .menu__item
@@ -41,15 +51,54 @@
 	}
 	// .menu__link
 	&__link {
-		@media (max-width: toEm($mobile)) {
+		color: #fff;
+		font-size: 18px;
+		@media (max-width: toEm($tablet)) {
 		}
 	}
+
+	&__contacts {
+	}
+
+	&__contacts-info {
+		margin-bottom: 60px;
+	}
+
+	&__contacts-text {
+		color: $bisonHide;
+		&::before{
+			padding-right: 5px;
+			
+		}
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__social {
+	}
+
+	&__social-link {
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+		& img {
+			transition: all 0.3s	ease;
+			width: 40px;
+			height: 40px;
+		}
+
+		&:hover img {
+			transform: scale(1.1);
+		}	
+	}
+
 }
 
 //Burger Icon
 .icon-menu {
 	display: none;
-	@media (max-width: toEm($mobile)) {
+	@media (max-width: toEm($tablet)) {
 		display: block;
 		position: relative;
 		width: toRem(30);
@@ -67,7 +116,7 @@
 			position: absolute;
 			width: 100%;
 			height: 2px;
-			background-color: #000;
+			background-color: #fff;
 		}
 		&::before {
 			top: 0;
@@ -96,3 +145,4 @@
 		}
 	}
 }
+

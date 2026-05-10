@@ -6,6 +6,8 @@ const isProduction = process.env.NODE_ENV === 'production'
 const isWp = process.argv.includes('--wp')
 
 export default {
+
+	
 	lang: 'ua', // Наразі тільки Українська
 	vscode: {
 		settings: true,
