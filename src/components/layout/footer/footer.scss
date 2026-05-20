@@ -1,5 +1,6 @@
 .footer {
 	@include adaptiveValue("padding-top", 85, 36,0,1200,768);
+	@include adaptiveValue("padding-bottom", 40, 22,0,1200,768);
 	background-color: $blackBg;
 		&__container {
 			
@@ -59,24 +60,34 @@
 		}
 
 		&__items {
-			display: flex;
-			@include adaptiveValue("gap", 64, 24,0,1200,768);
-			@media screen and (max-width: 1224px) {
+			@media (min-width:toEm($mobile)){	  
+				display: flex;
+				@include adaptiveValue("gap", 64, 24,0,1200,768);
+			}
+			@media (min-width:toEm($mobile)) and (max-width: 1224px) {
 				justify-content: space-between;
 				width: 100%;
+			}
+			@media (max-width:toEm($mobile)){
+				 width: 100%; 
 			}
 		}
 
 		&__bottom {
-			@include adaptiveValue("padding-bottom", 40, 22);
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			gap: 20px;
+			@media (min-width:toEm($mobile)){
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 20px;
+			}
 		}
 
 		&__copyright {
 			color: rgba(255, 255, 255, 0.6);
+			@media (max-width:toEm($mobile)){
+				 margin-bottom: 20px; 
+				 width: 100%;
+			}
 		}
 
 		&__policy {
@@ -95,14 +106,55 @@
 				}
 		}
 }
-.items-footer {
+
+.footer-spollers {
 
 		&__item {
 		}
 
-		&__subtitle {
+		&__title {
+			color: $whiteColor;
 			margin-bottom: 22px;
-			color: rgba(255, 255, 255, 0.6);
+			transition: color .3s ease;
+			&:hover {
+				text-decoration: underline;
+			}
+			cursor: default;
+			text-align: left;
+			position: relative;
+				list-style: none;
+				&::marker,
+				&::-webkit-details-marker {
+					display: none;
+				}
+				.--spoller-init & {
+					cursor: pointer;
+					&::before,
+					&::after {
+						content: "";
+						position: absolute;
+						right: 10px;
+						top: 50%;
+						background-color: #fff;
+						height: 2px;
+						width: 15px;
+						transition: transform 0.5s ease 0s;
+					}
+					&::before {
+						transform: translate(-75%, -50%) rotate(40deg);
+					}
+					&::after {
+						transform: translate(0, -50%) rotate(-40deg);
+					}
+					&.--spoller-active {
+						&::before {
+							transform: translateX(-75%) rotate(-40deg);
+						}
+						&::after {
+							transform: rotate(40deg);
+						}
+					}
+				}
 		}
 
 		&__list {
@@ -120,3 +172,4 @@
 				}
 		}
 }
+

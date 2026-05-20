@@ -105,6 +105,9 @@ body::after {
 			@include adaptiveValue("gap", 50, 30);
 			grid-template-columns: repeat(2, 1fr);
 			@include adaptiveValue("margin-bottom", 48, 20);
+			@media (max-width:toEm($mobile)){
+				grid-template-columns: repeat(1, 1fr);
+			}
 		}
 
 		&__field {
@@ -116,7 +119,9 @@ body::after {
 		}
 
 		&__field--full {
-			grid-column: span 2;
+			@media (min-width:toEm($mobile)){	  
+				grid-column: span 2;
+			}
 		}
 
 		&__input {
