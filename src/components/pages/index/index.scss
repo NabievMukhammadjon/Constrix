@@ -111,7 +111,8 @@
 		}
 
 		&__title {
-			color: $whiteColor;
+			color: $bisonHide;
+			text-decoration: uppercase;
 		}
 
 		&__link {
@@ -138,6 +139,7 @@
 
 		&__title {
 			color: $whiteColor;
+			margin-bottom: 58px;
 			@media (max-width:toEm(1300)){
 				display: none;
 			}
@@ -148,6 +150,18 @@
 			@media (min-width:toEm(1300)){
 				display: flex;
 				margin-bottom: 24px;
+				height: 520px;
+			}
+		}
+
+		&__image {
+			psition: relative;
+			flex: 1 0 50%;
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				
 			}
 		}
 
@@ -189,7 +203,6 @@
 				background-color: rgba(255, 255, 255, 0.1);
 			}
 		}
-
 		&__gallery {
 		}
 }
