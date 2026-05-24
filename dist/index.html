@@ -4,25 +4,33 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Иконка сайта от фрилансера -->
-		<link rel="shortcut icon" href="./assets/img/logo-2.png" type="image/x-icon">
+		<link rel="shortcut icon" href="assets/img/logo-2.png" type="image/x-icon">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1775993623776"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1775993623776">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1779654330750"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1779654330750">
+		<link rel="preload" as="style" href="./css/webfonts.min.css">
+		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="./css/webfonts.min.css">
 	</head>
 	<body>
 		<div class="wrapper">
-			<header data-fls-header="" class="header">
+			<header data-fls-header="" data-fls-header-scroll="500" data-fls-header-scroll-show="" class="header">
 				<div class="header__container">
 					<div class="header__body">
 						<div class="header__logo">
-							<a href="/" class="header__logo-link">
-								<img src="./assets/img/logo.svg" alt="Logo" class="header__logo-img">
+							<a href="#" class="header__logo-link logo-site">
+								<svg class="logo-site__svg">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-logo-white"></use>
+								</svg>
+								<div class="logo-site__info">
+									<div class="logo-site__name">CONSTRIX</div>
+									<div class="logo-site__descr">Architekture | Engineering</div>
+								</div>
 							</a>
 						</div>
 						<nav class="header__nav nav-header">
 							<ul class="nav-header__list">
 								<li class="nav-header__item">
-									<a href="/" class="nav-header__link">Home</a>
+									<a href="/" class="nav-header__link">HOME</a>
 								</li>
 								<li class="nav-header__item">
 									<a href="/projects" class="nav-header__link">ABOUT US</a>
@@ -34,22 +42,395 @@
 									<a href="/contacts" class="nav-header__link">OUR PROJECTS</a>
 								</li>
 								<li class="nav-header__item">
-									<a href="/contacts" class="nav-header__link">Portfolio</a>
+									<a href="/contacts" class="nav-header__link">PORTFOLIO</a>
 								</li>
 								<li class="nav-header__item">
-									<a href="/contacts" class="nav-header__link">Pages</a>
+									<a href="/contacts" class="nav-header__link">PAGES</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
-					<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"Home"}'></include> -->
+					s
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="https:/google.com" class="menu__link">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Blog</a>
+								</li>
+							</ul>
+							<div class="menu__contacts">
+								<div class="menu__contacts-info">
+									<p class="menu__contacts-text --icon-home">Mirabad Street 33</p>
+									<p class="menu__contacts-text --icon-phone">+998901254090</p>
+									<p class="menu__contacts-text --icon-mail">constrix@gmail.com</p>
+								</div>
+								<div class="menu__social">
+									<a href="#" class="menu__social-link">
+										<img src="./assets/img/social-icons/instagram.svg" alt="Instagram">
+									</a>
+									<a href="#" class="menu__social-link">
+										<img src="./assets/img/social-icons/telegram.svg" alt="Telegram">
+									</a>
+									<a href="#" class="menu__social-link">
+										<img src="./assets/img/social-icons/facebook.svg" alt="Facebook">
+									</a>
+									<a href="#" class="menu__social-link">
+										<img src="./assets/img/social-icons/youtube.svg" alt="YouTube">
+									</a>
+								</div>
+							</div>
+						</nav>
+					</div>
 				</div>
 			</header>
 			<main class="page">
-				<div data-fls-index="" class="index"></div>
+				<div data-fls-index="" class="index">
+					<!--
+<div data-fls-fullpage class="test">
+<div data-fls-fullpage-section class="test__section">\
+<div class="test__container">
+<div class="test__body">
+<h1 class="test__title">We are Constrix</h1>
+<div class="test__text">We are a team of professionals who create unique and modern websites for our
+clients. We work with small businesses, startups, and large corporations to help them establish their
+online presence and reach their target audience.</div>
+</div>
+</div>
+</div>
+</div>
+-->
+					<!--
+<section data-fls-fullpage ullpage-bullets class="main-hero">
+<div data-fls-fullpage-section class="main-hero__section">
+-->
+					<section data-fls-fullpage="" class="main-hero">
+						<div class="main-hero__container">
+							<div class="main-hero__body">
+								<h1 class="main-hero__title">We are Constrix</h1>
+								<div class="main-hero__text">
+									We are a team of professionals who create unique and modern websites
+					for our
+					clients. We work with small businesses, startups, and large corporations to help them establish
+					their
+					online presence and reach their target audience.
+								</div>
+								<a href="/contacts" class="main-hero__link">Contact Us</a>
+							</div>
+						</div>
+					</section>
+					<section class="projects">
+						<div class="projects__container">
+							<div class="projects__top">
+								<h3 class="projects__title">Our Work</h3>
+								<a href="/projects" class="projects__link">View All Projects</a>
+							</div>
+							<div class="projects__body body-projects">
+								<h2 class="body-projects__title site-title">Featured Projects</h2>
+								<div class="body-projects__block">
+									<div class="body-projects__image">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/project-7-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/project-7-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/project-7.webp">
+										</picture>
+									</div>
+									<div class="body-projects__info">
+										<span class="body-projects__category">Private Residence</span>
+										<h4 class="body-projects__name">The Morrison Estate</h4>
+										<div class="body-projects__descr">
+											Complete exterior transformation featuring imported
+							Italian travertine, custom pool coping, and hand-carved
+							architectural details.
+										</div>
+										<div class="body-projects__location">Beverly Hills, CA</div>
+									</div>
+								</div>
+								<div class="body-projects__gallery gallery-main">
+									<div data-fls-gallery="" class="gallery-main__body gallery">
+										<div class="gallery-main__item">
+											<a href="./assets/img/project-8.webp" class="gallery-main__link gallery__image">
+												<picture>
+													<source media="(max-width: 600px)" srcset="./assets/img/project-8-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/project-8-1200.webp" type="image/webp">
+													<img alt="Image" class="gallery-main__photo gallery__preview" src="./assets/img/project-8.webp">
+												</picture>
+											</a>
+										</div>
+										<div class="gallery-main__item">
+											<a href="./assets/img/project-9.webp" class="gallery-main__link gallery__image">
+												<picture>
+													<source media="(max-width: 600px)" srcset="./assets/img/project-9-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/project-9-1200.webp" type="image/webp">
+													<img alt="Image" class="gallery-main__photo gallery__preview" src="./assets/img/project-9.webp">
+												</picture>
+											</a>
+										</div>
+										<div class="gallery-main__item">
+											<a href="./assets/img/project-10.webp" class="gallery-main__link gallery__image">
+												<picture>
+													<source media="(max-width: 600px)" srcset="./assets/img/project-10-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/project-10-1200.webp" type="image/webp">
+													<img alt="Image" class="gallery-main__photo gallery__preview" src="./assets/img/project-10.webp">
+												</picture>
+											</a>
+										</div>
+										<div class="gallery-main__item gallery-main__item-large">
+											<a href="./assets/img/project-11.webp" class="gallery-main__link gallery__image">
+												<picture>
+													<source media="(max-width: 600px)" srcset="./assets/img/project-11-600.webp" type="image/webp">
+													<source media="(max-width: 1200px)" srcset="./assets/img/project-11-1200.webp" type="image/webp">
+													<img alt="Image" class="gallery-main__photo gallery__preview" src="./assets/img/project-11.webp">
+												</picture>
+											</a>
+										</div>
+										<div class="gallery-main__item">
+											<a href="./assets/img/project-6.webp" class="gallery-main__link gallery__image">
+												<picture>
+													<img alt="Image" class="gallery-main__photo gallery__preview" src="./assets/img/project-6.webp">
+												</picture>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="process">
+						<div class="process__container">
+							<h2 class="process__title site-title">Our Process</h2>
+							<div class="process__body body-process">
+								<div class="body-process__item">
+									<div class="body-process__num">01</div>
+									<h3 class="body-process__subtitle">Discovery</h3>
+									<p class="body-process__descr">
+										We begin by listening.
+						Understanding your vision,
+						lifestyle, and the unique character
+						of your space is essential to
+						creating something truly
+						exceptional.
+									</p>
+								</div>
+								<div class="body-process__item">
+									<div class="body-process__num">02</div>
+									<h3 class="body-process__subtitle">Design</h3>
+									<p class="body-process__descr">
+										Our team develops detailed plans,
+						curates material selections from
+						the world's finest quarries, and
+						presents photorealistic
+						visualizations of your project.
+									</p>
+								</div>
+								<div class="body-process__item">
+									<div class="body-process__num">03</div>
+									<h3 class="body-process__subtitle">Craft</h3>
+									<p class="body-process__descr">
+										Master artisans bring designs to
+						life with meticulous precision. Every
+						cut, every placement, every finish
+						receives the attention it deserves.
+									</p>
+								</div>
+								<div class="body-process__item">
+									<div class="body-process__num">04</div>
+									<h3 class="body-process__subtitle">Deliver</h3>
+									<p class="body-process__descr">
+										We don't consider a project
+						complete until you're absolutely
+						thrilled. Our rigorous quality
+						standards ensure perfection in
+						every detail.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="quote">
+						<div class="quote__container">
+							<svg>
+								<use xlink:href="./assets/img/spritemap.svg#sprite-quotes"></use>
+							</svg>
+							<div class="quote__text">
+								Mansory didn't just meet our expectations—
+				they redefined what we thought was possible.
+				The craftsmanship is absolutely
+				breathtaking. Our outdoor space has become
+				the heart of our home.
+							</div>
+							<div class="quote__author">Victoria & James Hartwell</div>
+							<div class="quote__org">Private Residence, Pacific Palisades</div>
+						</div>
+					</section>
+					<section class="consultation">
+						<div class="consultation__container">
+							<h2 class="consultation__title site-title">Your Vision.
+				Our Mastery.</h2>
+							<p class="consultation__text">
+								The finest homes deserve the finest craftsmanship. Schedule a private
+				consultation and
+				discover what Mansory can create for you.
+							</p>
+							<a href="#" data-fls-popup-link="consultaion" class="consultation__link">Contact Us</a>
+						</div>
+					</section>
+				</div>
+				<div data-fls-popup="popup" aria-hidden="true" class="popup">
+					<div data-fls-popup-wrapper="" class="popup__wrapper">
+						<div data-fls-popup-body="" class="popup__body">
+							<button data-fls-popup-close="" type="button" class="popup__close">
+								<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+									<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+								</svg>
+							</button>
+							<div data-fls-popup-content="" class="popup__text"><!-- Контент --></div>
+						</div>
+					</div>
+				</div>
+				<div data-fls-popup="consultaion" aria-hidden="true" class="popup popup-consultaion">
+					<div data-fls-popup-wrapper="" class="popup-consultaion__wrapper">
+						<div data-fls-popup-body="" class="popup-consultaion__body">
+							<h3 class="popup-consultaion__title">Заказать консультацию</h3>
+							<button data-fls-popup-close="" type="button" class="popup-consultaion__close">
+								<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square"></path>
+									<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square"></path>
+								</svg>
+							</button>
+							<div data-fls-popup-content="" class="popup-consultaion__body">
+								<!-- <form data-fls-form method="POST" action="files/sendmail/sendmail.php" -->
+								<form data-fls-form="dev" method="POST" action="files/sendmail/sendmail.php" class="popup-consultaion__form form-popup">
+									<div class="form-popup__fields">
+										<div class="form-popup__field">
+											<!--
+<input id="nameInput" autocomplete="off" type="text" name="form[name]" data-fls-form-errtext="Error"
+data-placeholder="" class="form-popup__input input" data-required="name">
+-->
+											<input id="nameInput" autocomplete="off" type="text" name="form[name]" data-fls-form-validatenow="" data-fls-form-errtext="Error" placeholder="" class="form-popup__input input" required>
+											<label for="nameInput" class="form-popup__label">Имя</label>
+										</div>
+										<div class="form-popup__field">
+											<!--
+<input id="emailInput" autocomplete="off" type="text" name="form[email]" data-fls-form-errtext="Error" data-placeholder=""
+class="form-popup__input input" data-required="email">
+-->
+											<input id="emailInput" autocomplete="off" type="email" name="form[email]" data-fls-form-validatenow="" data-fls-form-errtext="Error" placeholder="" class="form-popup__input input" required>
+											<label for="emailInput" class="form-popup__label">E-mail</label>
+										</div>
+										<div class="form-popup__field form-popup__field--full">
+											<textarea name="form[textarea]" id="form[textarea]" data-fls-form-errtext="Error" placeholder="" class="form-popup__input form-popup__input--textarea"></textarea>
+											<label for="form[textarea]" class="form-popup__label">Сообщение</label>
+										</div>
+									</div>
+									<div class="form-popup__checkbox">
+										<input id="form[checkbox]" type="checkbox" name="form[checkbox]" data-fls-form-validatenow="" required data-fls-form-errtext="Error" class="form-popup__checkbox-input">
+										<label for="form[checkbox]" class="form-popup__checkbox-label">Я согласен на обработку персональных
+							данных</label>
+									</div>
+									<button type="submit" class="form-popup__button">Send</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
 			</main>
 			<footer data-fls-footer="" class="footer">
-				<div class="footer__container"></div>
+				<div class="footer__container">
+					<div class="footer__body">
+						<div class="footer__right">
+							<a href="#" class="footer__logo logo-site">
+								<svg class="logo-site__svg">
+									<use xlink:href="./assets/img/spritemap.svg#sprite-logo-white"></use>
+								</svg>
+								<div class="logo-site__info">
+									<div class="logo-site__name">CONSTRIX</div>
+									<div class="logo-site__descr">Architekture | Engineering</div>
+								</div>
+							</a>
+							<p class="footer__descr">
+								Premium stone masonry for the most discerning
+					architectural projects. Crafting excellence since
+					1998.
+							</p>
+						</div>
+						<div class="footer__items items-footer">
+							<div data-fls-spollers="767.98,max" class="items-footer__item footer-spollers">
+								<details class="footer-spollers__item">
+									<summary class="footer-spollers__title">Navigation</summary>
+									<div class="footer-spollers__list">
+										<div class="footer-spollers__info">
+											<a href="`/" class="footer-spollers__link">Home</a>
+										</div>
+										<div class="footer-spollers__info">
+											<a href="`/" class="footer-spollers__link">About</a>
+										</div>
+										<div class="footer-spollers__info">
+											<a href="`/" class="footer-spollers__link">Services</a>
+										</div>
+										<div class="footer-spollers__info">
+											<a href="`/" class="footer-spollers__link">Portfolio</a>
+										</div>
+									</div>
+								</details>
+							</div>
+							<div data-fls-spollers="767.98,max" class="items-footer__item footer-spollers">
+								<details class="footer-spollers__item">
+									<summary class="footer-spollers__title">Services</summary>
+									<div class="footer-spollers__list">
+										<div class="footer-spollers__info">
+											<a href="`/" class="footer-spollers__link">Pools & Water Features</a>
+										</div>
+										<div class="footer-spollers__info">
+											<a href="`/" class="footer-spollers__link">Architectural Masonry</a>
+										</div>
+										<div class="footer-spollers__info">
+											<a href="`/" class="footer-spollers__link">Hardscape Design</a>
+										</div>
+										<div class="footer-spollers__info">
+											<a href="`/" class="footer-spollers__link">Custom Stonework</a>
+										</div>
+									</div>
+								</details>
+							</div>
+							<div data-fls-spollers="767.98,max" class="items-footer__item footer-spollers">
+								<details class="footer-spollers__item">
+									<summary class="footer-spollers__title">Contact</summary>
+									<div class="footer-spollers__list">
+										<div class="footer-spollers__info">
+											<a href="`/" class="footer-spollers__link">1247 Stone Canyon Road</a>
+										</div>
+										<div class="footer-spollers__info">
+											<a href="`/" class="footer-spollers__link">Los Angeles, CA 90077</a>
+										</div>
+										<div class="footer-spollers__info">
+											<a href="`/" class="footer-spollers__link">+1 (310) 555-1234</a>
+										</div>
+										<div class="footer-spollers__info">
+											<a href="`/" class="footer-spollers__link">info@mansory.com</a>
+										</div>
+									</div>
+								</details>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__copyright">&copy; © 2026 CONSTRIX. All rights reserved.</div>
+						<div class="footer__policy">
+							<a href="/policy" class="footer__policy-link">Privacy Policy</a>
+							<a href="/policy" class="footer__policy-link">Terms of Service</a>
+						</div>
+					</div>
+				</div>
 			</footer>
 		</div>
 	</body>
